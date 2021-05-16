@@ -17,13 +17,9 @@
     <body>
         <div>
             <button onclick="addKudo()" id="kudo-button"> Add Kudos! </button>
-            <div id="kudo-count">0</div>
+            <div class="panel" id="kudo-count">0</div>
+            <img src="icon-star.png">
+            <!-- <input class="hidden" id="kudo-issue-key" value="$issueKey"></input> -->
         </div>
-        <script>
-            function addKudo(){  
-                var count = document.getElementById("kudo-count");
-                count.innerHTML = parseInt(count.innerHTML)+1;
-            }
-        </script>
     </body>
 </html>  
