@@ -3,7 +3,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="ap-local-base-url" content="https://raw.githubusercontent.com/Jekzer/Kudos2U/main" />
-        <title>Todos</title>
+        <title>Kudos</title>
         <link rel="stylesheet" href="//aui-cdn.atlassian.com/aui-adg/5.8.12/css/aui.css" media="all" />
         <link rel="stylesheet" href="//aui-cdn.atlassian.com/aui-adg/5.8.12/css/aui-experimental.css" media="all" />
         <!--[if IE 9]><link rel="stylesheet" href="//aui-cdn.atlassian.com/aui-adg/5.8.12/css/aui-ie9.css" media="all"><![endif]-->
@@ -15,12 +15,12 @@
     </head>
     <body>
         <div>
-            <input class="hidden" id="todos-issue-key" value="$issueKey"></input>
-            <div id="todo-list">
+            <button class="kudo-button" value="create" id="add-kudo-button"> Kudo </button>
+            <input class="hidden" id="kudo-issue-key" value="$issueKey"></input>
+            <div id="kudo-count">
             </div>
             <div class="field-group">
                 <input class="text medium-field" type="text" name="description" id="description-input"></input>
-                <button class="aui-button" value="create" id="create-button"> Create </button>
             </div>
         </div>
     </body>
