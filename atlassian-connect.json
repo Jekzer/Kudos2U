@@ -12,14 +12,15 @@
     },
     "apiVersion": 1,
     "modules": {
-        "generalPages": [
+        "webPanels": [
             {
-                "url": "/index.html",
-                "key": "hello-world",
-                "location": "system.top.navigation.bar",
-                "name": {
-                    "value": "Greeting"
-                }
+              "key": "kudo-panel",
+              "url": "/index.html",
+              "location": "atl.jira.view.issue.right.context",
+              "weight": 50,
+              "name": {
+                "value": "Kudo Score"
+              }       
             }
         ]
     }
