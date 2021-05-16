@@ -12,17 +12,17 @@
     },
     "apiVersion": 1,
     "modules": {
-        "webSections": [
+        "webPanels": [
             {
-                "key": "board-links",
-                "location": "jira.agile.board.tools",
-                "weight": 10,
-                "name": {
-                "value": "Example Button"
-                }
+              "location": "atl.jira.view.issue.right.context",
+              "weight": 50,
+              "name": {
+                "value": "Kudo Panel"
+              },
+              "key": "kudo-panel"          
             }
         ],
-        
+     
         "webItems": [
             {
                 "location": "board-links",
