@@ -1,33 +1,34 @@
 // Añade un kudo al issue
 function addKudo(){  
     // Obtenemos la descripción a partir del input:
-    var todo = $('#kudo-count').val();
-    $('#kudo-count').val("Hola");
+    var todo = parseInt($('#kudo-count').val());
+    todo++;
+    $('#kudo-count').val(todo);
 
-    // Obtenemos la 'issue key'
-    var issueId = getIssueKey();
+    // // Obtenemos la 'issue key'
+    // var issueId = getIssueKey();
 
-    // hacemos la petición a la API rest de JIRA
-    AP.require(['request'], function(request) {
-        request({
-            url: '/rest/api/2/issue/'+issueId+'/properties/kudos',
-            success: function() {
-                refreshTodoPanel();
-            },
-            error: function() {
-                console.error("Error loading API" + response.status);
-            },
-            data: JSON.stringify(todo),
-            type: "PUT",
-            contentType: "application/json"
-        });
-    });  
+    // // hacemos la petición a la API rest de JIRA
+    // AP.require(['request'], function(request) {
+    //     request({
+    //         url: '/rest/api/2/issue/'+issueId+'/properties/kudos',
+    //         success: function() {
+    //             refreshTodoPanel();
+    //         },
+    //         error: function() {
+    //             console.error("Error loading API" + response.status);
+    //         },
+    //         data: JSON.stringify(todo),
+    //         type: "PUT",
+    //         contentType: "application/json"
+    //     });
+    // });  
 }
 
 // Inicializamos el panel
 $(function(){
     $('#create-button').click(addKudo);
-    refreshTodoPanel();
+    //refreshTodoPanel();
 });
 
 // Obtiene los todos y genera dinámicamente la tabla con los mismos
