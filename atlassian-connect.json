@@ -1,0 +1,26 @@
+{
+    "name": "Kudos 2 U",
+    "description": "App to give kudos to users that finish issues",
+    "key": "k2u",
+    "baseUrl": "https://<placeholder-url>",
+    "vendor": {
+        "name": "Quabu Solutions, sl",
+        "url": "http://example.com"
+    },
+    "authentication": {
+        "type": "none"
+    },
+    "apiVersion": 1,
+    "modules": {
+        "generalPages": [
+            {
+                "url": "/k2u-main.html",
+                "key": "k2u-main",
+                "location": "system.top.navigation.bar",
+                "name": {
+                    "value": "Kudos 2 U"
+                }
+            }
+        ]
+    }
+}
