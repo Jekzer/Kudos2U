@@ -2,7 +2,7 @@
     "name": "Kudos 2 U",
     "description": "App to give kudos to users that finish issues",
     "key": "k2u",
-    "baseUrl": "https://<placeholder-url>",
+    "baseUrl": "https://raw.githubusercontent.com/Jekzer/Kudos2U/main/atlassian-connect.json",
     "vendor": {
         "name": "Quabu Solutions, sl",
         "url": "http://example.com"
