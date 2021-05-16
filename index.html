@@ -16,9 +16,20 @@
     </head>
     <body>
         <div>
-            <button class="aui-button" value="create" id="create-button"> Create </button>
-            <input class="hidden" id="kudo-issue-key" value="$issueKey"></input>
-            <div id="kudo-count"></div>
+            <button onclick="addKudo()"> Lock </button>
+            <div id="kudo-count">0</div>
+            <!-- <input class="hidden" id="kudo-issue-key" value="$issueKey"></input> -->
+            
         </div>
+        <script>
+            function addKudo(){  
+                // Obtenemos el conteo actual, incrementamos y actualizamos
+                
+                var count = document.getElementById("kudo-count");
+                count.innerHTML = parseInt(count.innerHTML)+1;
+
+                //$('#create-button').val(todo);  
+            }
+        </script>
     </body>
 </html>  
