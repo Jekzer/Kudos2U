@@ -12,14 +12,52 @@
     },
     "apiVersion": 1,
     "modules": {
-        "generalPages": [
+        // "generalPages": [
+        //     {
+        //         "url": "/k2u-main.html",
+        //         "key": "k2u-main",
+        //         "location": "system.top.navigation.bar",
+        //         "name": {
+        //             "value": "Kudos 2 U"
+        //         }
+        //     }
+        // ]
+        "webSections": [
             {
-                "url": "/k2u-main.html",
-                "key": "k2u-main",
-                "location": "system.top.navigation.bar",
+                "key": "board-links",
+                "location": "jira.agile.board.tools",
+                "weight": 10,
                 "name": {
-                    "value": "Kudos 2 U"
+                "value": "Example Button"
                 }
+            }
+        ],
+        
+        "webItems": [
+            {
+                "location": "board-links",
+                "weight": 200,
+                "styleClasses": [
+                    "webitem",
+                    "system-present-webitem"
+                ],
+                "url": "https://jirasupport.wordpress.com",
+                "context": "product",
+                "target": {
+                    "type": "page"
+                },
+                "tooltip": {
+                    "value": "Link"
+                },
+                "icon": {
+                    "width": 16,
+                    "height": 16,
+                    "url": "/icon-star.png"
+                },
+                "name": {
+                    "value": "Link"
+                },
+                "key": "install"
             }
         ]
     }
