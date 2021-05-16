@@ -12,16 +12,6 @@
     },
     "apiVersion": 1,
     "modules": {
-        // "generalPages": [
-        //     {
-        //         "url": "/k2u-main.html",
-        //         "key": "k2u-main",
-        //         "location": "system.top.navigation.bar",
-        //         "name": {
-        //             "value": "Kudos 2 U"
-        //         }
-        //     }
-        // ]
         "webSections": [
             {
                 "key": "board-links",
