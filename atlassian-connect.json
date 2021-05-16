@@ -15,7 +15,7 @@
         "webPanels": [
             {
               "key": "kudo-panel",
-              "url": "/kudo-panel?issueKey={issue.key}",
+              "url": "/index.html",
               "location": "atl.jira.view.issue.right.context",
               "weight": 50,
               "name": {

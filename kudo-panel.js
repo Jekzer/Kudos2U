@@ -1,8 +1,8 @@
-// Crea un 'to do' en la issue
-function createTodo(){  
+// Añade un kudo al issue
+function addKudo(){  
     // Obtenemos la descripción a partir del input:
-    var todo = $('#description-input').val();
-    $('#description-input').val("Hola");
+    var todo = $('#kudo-count').val();
+    $('#kudo-count').val("Hola");
 
     // Obtenemos la 'issue key'
     var issueId = getIssueKey();
@@ -26,7 +26,7 @@ function createTodo(){
 
 // Inicializamos el panel
 $(function(){
-    $('#create-button').click(createTodo);
+    $('#create-button').click(addKudo);
     refreshTodoPanel();
 });
 
