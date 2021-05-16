@@ -14,41 +14,13 @@
     "modules": {
         "webPanels": [
             {
+              "key": "kudo-panel",
               "url": "/kudo-panel?issueKey={issue.key}",
               "location": "atl.jira.view.issue.right.context",
               "weight": 50,
               "name": {
-                "value": "Kudo Panel"
-              },
-              "key": "kudo-panel"          
-            }
-        ],
-     
-        "webItems": [
-            {
-                "location": "board-links",
-                "weight": 200,
-                "styleClasses": [
-                    "webitem",
-                    "system-present-webitem"
-                ],
-                "url": "https://jirasupport.wordpress.com",
-                "context": "product",
-                "target": {
-                    "type": "page"
-                },
-                "tooltip": {
-                    "value": "Link"
-                },
-                "icon": {
-                    "width": 16,
-                    "height": 16,
-                    "url": "/icon-star.png"
-                },
-                "name": {
-                    "value": "Link"
-                },
-                "key": "install"
+                "value": "Kudo Score"
+              },       
             }
         ]
     }
